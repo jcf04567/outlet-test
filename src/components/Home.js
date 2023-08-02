@@ -11,7 +11,7 @@ const Home = () => {
   }
   return (
       <div>
-        <h2>Home画面です。{signIn ? '(サインイン)' : '(不正サインイン)'}</h2>
+        <h2>Home画面です。{signIn ? '(サインイン状態)' : '(不正サインイン)'}</h2>
         <button onClick={handleSignOut}>SignOut</button>
       </div>
   );

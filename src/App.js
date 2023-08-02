@@ -20,6 +20,7 @@ function App() {
             <Route element={<PublicRoute />}>
               <Route path="/signup" element={<SignUp />} />
               <Route path="/signin" element={<SignIn />} />
+              <Route path="*" element={<div><h1>404　ページが見つかりません。</h1></div>} />
             </Route>
         </Routes>
       </BrowserRouter>
