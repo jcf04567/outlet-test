@@ -9,9 +9,10 @@ import PrivateRoute from "./components/PrivateRote";
 import PublicRoute from "./components/PublicRoute";
 
 function App() {
+  const URL_PASS = process.env.REACT_APP_URL_PASS;
   return (
     <SignInProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={URL_PASS}>
         <Routes>
           <Route path="/" element={
             <PrivateRoute>
